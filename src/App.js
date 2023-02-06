@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Button from "./Components/Button";
+import Img from "./Components/Img";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Button
+        content="Primo bottone"
+        color="white"
+        bgc="#645"
+        width="200px"
+        height="150px"
+        borad="100px"
+        fontFamily="san serif"
+        fs="2em"
+      />
+      <Button
+        content="Secondo Bottone"
+        color="white"
+        bgc="#345"
+        margin="50px"
+        width="300px"
+        height="100px"
+        borad="30px"
+      />
+      <Img
+        img="https://www.purina.it/sites/default/files/2021-12/condividere-immagini-cani-social.jpg"
+        width="500px"
+        height="400px"
+      />
     </div>
   );
 }
